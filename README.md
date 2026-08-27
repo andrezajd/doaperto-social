@@ -1,4 +1,4 @@
-# DoaPerto Social
+DoaPerto Social
 
 > Uma plataforma para aproximar doadores, instituições e campanhas sociais do município.
 
@@ -53,7 +53,20 @@ Planejar e desenvolver uma plataforma digital que facilite a divulgação e a or
 | Doador | Consultar campanhas, verificar itens necessários e agendar uma entrega. |
 | Instituição | Criar e atualizar campanhas, informar necessidades, horários e confirmar recebimentos. |
 | Administrador | Validar instituições, acompanhar campanhas e administrar o sistema. |
+| Beneficiário | Consultar doações ou campanhas disponíveis para seu perfil, acompanhar solicitações e agendar a retirada quando autorizado. |
 | Gestor social (futuro) | Visualizar indicadores consolidados e demandas, sem expor dados pessoais de beneficiários. |
+
+## Acesso do beneficiário
+
+O beneficiário também terá acesso ao DoaPerto Social. Após ser validado pela instituição responsável ou pelo CRAS, ele poderá entrar em uma área pessoal para:
+
+- informar ou atualizar suas necessidades, quando autorizado;
+- acompanhar o andamento de uma solicitação;
+- visualizar doações liberadas para retirada;
+- consultar local, data e horário da retirada;
+- confirmar o recebimento da doação.
+
+O objetivo é dar mais autonomia à pessoa atendida, sem expor suas informações aos doadores. A validação da necessidade continua sendo responsabilidade de profissionais e instituições autorizadas.
 
 ## Funcionalidades previstas
 
@@ -65,6 +78,7 @@ Planejar e desenvolver uma plataforma digital que facilite a divulgação e a or
 - cadastro e atualização de campanhas por instituições;
 - agendamento de entrega de uma doação;
 - confirmação de recebimento;
+- consulta e acompanhamento de solicitações pelo beneficiário;
 - painel administrativo básico.
 
 ### Evoluções futuras
@@ -80,7 +94,7 @@ Planejar e desenvolver uma plataforma digital que facilite a divulgação e a or
 
 O sistema não deverá expor publicamente informações de famílias atendidas, como nomes, documentos, endereços ou situação social. Para o protótipo acadêmico serão utilizados apenas dados fictícios.
 
-Caso exista uma etapa futura com participação do CRAS ou de outros órgãos públicos, a validação de beneficiários deverá ocorrer somente em uma área restrita, por profissionais autorizados. O papel do sistema será apoiar campanhas e necessidades, e não substituir a avaliação social realizada pelos órgãos responsáveis.
+O beneficiário poderá ter acesso a uma área pessoal do aplicativo para acompanhar solicitações e verificar doações liberadas para retirada. No entanto, ele não será aprovado automaticamente pelo sistema. Caso exista uma etapa futura com participação do CRAS ou de outros órgãos públicos, a validação deverá ocorrer somente em uma área restrita, por profissionais autorizados. O papel do sistema será apoiar campanhas e necessidades, e não substituir a avaliação social realizada pelos órgãos responsáveis.
 
 ## Escopo por semestre
 
@@ -90,7 +104,7 @@ Caso exista uma etapa futura com participação do CRAS ou de outros órgãos p�
 | 2º | Cadastro, login e perfis de doador, instituição e administrador. |
 | 3º | Criação de campanhas, itens necessários, datas, locais e horários. |
 | 4º | Agendamento, confirmação de recebimento e notificações. |
-| 5º | Controle de demandas e área interna para gestão social, com foco em proteção de dados. |
+| 5º | Perfil do beneficiário, controle de solicitações, demandas e área interna para gestão social, com foco em proteção de dados. |
 | 6º | Dashboard, relatórios, mapa de coleta, testes com usuários e possível piloto. |
 
 ## Escopo do 1º semestre
@@ -113,8 +127,9 @@ Não faz parte do escopo inicial criar uma integração real com prefeitura, CRA
 3. detalhes de uma campanha;
 4. agendamento de doação;
 5. login e cadastro;
-6. painel da instituição para criar ou editar campanhas;
-7. painel administrativo básico.
+6. área do beneficiário para acompanhar solicitações e retiradas;
+7. painel da instituição para criar ou editar campanhas;
+8. painel administrativo básico.
 
 ## Tecnologias previstas
 
@@ -141,4 +156,3 @@ O DoaPerto Social foi escolhido por ser viável como sistema web, ter impacto so
 ## Status
 
 O projeto encontra-se na etapa de **planejamento e pesquisa do 1º semestre**.
-
