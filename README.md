@@ -145,7 +145,7 @@ As tecnologias serão definidas conforme o conteúdo de cada semestre. Como pont
 
 Antes de definir as funcionalidades finais, o grupo realizará uma pesquisa com a comunidade. O objetivo é compreender hábitos de doação e identificar as informações que mais dificultam esse processo.
 
-O roteiro completo está em [docs/pesquisa-inicial.md](docs/pesquisa-inicial.md).
+O roteiro completo está em [docs/pesquisa-inicial.md](pesquisa-inicial.md).
 
 ## Decisão de escopo: por que não monitoramento de energia?
 
