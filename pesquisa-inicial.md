@@ -114,3 +114,5 @@ Após encerrar o formulário, o grupo deve:
 | Falta de confiança nas campanhas | As instituições devem possuir cadastro e validação administrativa. |
 | Falta de tempo para entregar | O sistema deve permitir agendamento de entrega. |
 
+O projeto DoaPerto Social iniciou sua fase de levantamento de requisitos através de uma pesquisa de validação com a comunidade. O objetivo principal desta etapa é identificar as reais dificuldades enfrentadas por pessoas que desejam doar e mapear as funcionalidades mais úteis para a primeira versão da plataforma. O público-alvo abrange tanto os cidadãos dispostos a contribuir quanto os representantes de instituições locais. A pesquisa foi estruturada para garantir o anonimato dos participantes, focando exclusivamente em dados para fins acadêmicos e definição arquitetural. O formulário de coleta pode ser acessado no link a seguir: https://forms.gle/7nAV265UKX5P9PAo8. Os dados obtidos serão posteriormente analisados para justificar a priorização de tarefas e os requisitos do sistema.
+
