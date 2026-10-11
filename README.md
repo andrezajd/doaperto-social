@@ -1,3 +1,5 @@
+<img width="1917" height="887" alt="image" src="https://github.com/user-attachments/assets/6e707d08-36b6-40fc-beb0-0850eec60c44" />
+
 DoaPerto Social
 
 > Uma plataforma para aproximar doadores, instituições e campanhas sociais do município.
