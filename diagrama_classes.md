@@ -46,9 +46,15 @@ classDiagram
         +cancelar() void
     }
 
+    %% Relacionamentos Corrigidos (Sem setas de navegabilidade)
     Usuario <|-- Doador : Herança
     Usuario <|-- Instituicao : Herança
-    Instituicao "1" --> "*" Campanha : cria
-    Doador "1" --> "*" Agendamento : realiza
-    Campanha "1" <-- "*" Agendamento : recebe
+    
+    Instituicao "1" -- "*" Campanha : cria
+    Doador "1" -- "*" Agendamento : realiza
+    Agendamento "*" -- "1" Campanha : referente a
+
 ```
+
+**O que mudou na prática?**
+Trocamos os `-->` e `<--` por `--`. Isso cria uma linha reta padrão no Mermaid. Além disso, invertemos a ordem do último relacionamento para `Agendamento "*" -- "1" Campanha : referente a`, o que facilita a leitura de cima para baixo no desenho final: *"Um Doador realiza Agendamentos, e esses Agendamentos são referentes a uma Campanha"*.
