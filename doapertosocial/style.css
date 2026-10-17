@@ -1,0 +1,397 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #fcfcfd;
+    color: #1e293b;
+    overflow-x: hidden;
+}
+
+/* Container Principal */
+.hero-banner {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Lado Esquerdo */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.brand-icon {
+    font-size: 2rem;
+    color: #e11d48; /* Vermelho vibrante de Itatiba */
+    background: #ffe4e6;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.brand-name {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0f172a; /* Azul Escuro */
+}
+
+.brand-sub {
+    font-size: 0.85rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #0f172a; /* Azul Escuro de Itatiba */
+    line-height: 1.15;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 1.15rem;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Formulário e Botão */
+.waitlist-form {
+    display: flex;
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 99px;
+    padding: 6px;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+    transition: border-color 0.3s;
+    margin-bottom: 12px;
+    max-width: 520px;
+}
+
+.waitlist-form:focus-within {
+    border-color: #0f172a;
+}
+
+.waitlist-form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: transparent;
+    color: #0f172a;
+}
+
+.waitlist-form button {
+    background-color: #e11d48; /* Vermelho de Itatiba */
+    color: #ffffff;
+    border: none;
+    border-radius: 99px;
+    padding: 12px 32px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+.waitlist-form button:hover {
+    background-color: #be123c;
+}
+
+.waitlist-form button:active {
+    transform: scale(0.97);
+}
+
+.form-subtext {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+.badge-partnership {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #f1f5f9;
+    padding: 8px 16px;
+    border-radius: 99px;
+    color: #0f172a; 
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Lado Direito (Preview do Celular) */
+.hero-preview {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-mockup {
+    width: 300px;
+    height: 590px;
+    background: #0f172a; /* Frame do telefone */
+    border-radius: 40px;
+    padding: 14px;
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+    border: 4px solid #1e293b;
+    position: relative;
+    z-index: 2;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    background: #f8fafc;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* App Interface */
+.app-header {
+    background: #0f172a; /* Azul Escuro */
+    color: #ffffff;
+    padding: 18px 16px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.app-title i {
+    color: #e11d48;
+}
+
+/* Card Substituindo Foto Externa por Elementos Nativos */
+.app-card {
+    background: #ffffff;
+    margin: 10px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #f1f5f9;
+}
+
+.card-image-fallback {
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3b82f6;
+    font-size: 2.2rem;
+}
+
+.card-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #e11d48; /* Vermelho Itatiba */
+    color: #ffffff;
+    font-size: 0.6rem;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.card-info {
+    padding: 10px 12px;
+}
+
+.card-info h3 {
+    font-size: 0.85rem;
+    color: #0f172a;
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+
+.card-info p {
+    font-size: 0.72rem;
+    margin-bottom: 0;
+    color: #64748b;
+    line-height: 1.3;
+}
+
+/* Simulação de Mapa com Malha Viária usando CSS */
+.map-simulation {
+    flex: 1;
+    background-color: #e2e8f0;
+    position: relative;
+    overflow: hidden;
+    /* Geração de malha urbana virtual no background */
+    background-image: 
+        linear-gradient(90deg, transparent 49%, rgba(255,255,255,0.6) 49%, rgba(255,255,255,0.6) 51%, transparent 51%),
+        linear-gradient(0deg, transparent 49%, rgba(255,255,255,0.6) 49%, rgba(255,255,255,0.6) 51%, transparent 51%),
+        linear-gradient(45deg, transparent 48%, rgba(255,255,255,0.4) 48%, rgba(255,255,255,0.4) 52%, transparent 52%);
+    background-size: 80px 80px, 80px 80px, 120px 120px;
+}
+
+.map-label {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0f172a;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 99px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Pinos do Mapa */
+.map-pin {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: #e11d48; /* Vermelho */
+    color: #ffffff;
+    border-radius: 50% 50% 50% 0; /* Efeito de gota */
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+.map-pin i {
+    transform: rotate(45deg); /* Desfaz a rotação para o ícone ficar em pé */
+    font-size: 0.75rem;
+}
+
+/* Posicionamentos dos pinos */
+.pin-1 { top: 20%; left: 15%; background: #0f172a; } /* Azul escuro */
+.pin-2 { top: 15%; right: 18%; background: #3b82f6; } /* Azul claro */
+.pin-3 { bottom: 35%; left: 22%; background: #eab308; } /* Amarelo */
+.pin-4 { bottom: 25%; right: 20%; background: #e11d48; } /* Vermelho */
+
+/* Pino de localização do Usuário (Centralizado) */
+.user-location-pin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: #10b981; /* Verde "online" */
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-location-pin i {
+    font-size: 0.55rem;
+    color: white;
+}
+
+/* Pulsação do pino */
+.pulse {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #10b981;
+    border-radius: 50%;
+    animation: pulsate 1.8s ease-out infinite;
+    opacity: 0;
+}
+
+@keyframes pulsate {
+    0% { transform: scale(0.1); opacity: 0.0; }
+    50% { opacity: 0.5; }
+    100% { transform: scale(1.2); opacity: 0.0; }
+}
+
+/* Navegação do App */
+.app-nav {
+    background: #ffffff;
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #f1f5f9;
+    color: #94a3b8;
+}
+
+.app-nav i {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.app-nav .active {
+    color: #e11d48;
+}
+
+/* Decorações na Traseira */
+.decor {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    font-size: 1.15rem;
+    z-index: 1;
+}
+
+.deco-1 { top: 15%; left: -20px; color: #e11d48; }
+.deco-2 { bottom: 12%; left: -10px; color: #0f172a; }
+.deco-3 { top: 40%; right: -15px; color: #eab308; }
+
+/* Responsivo */
+@media (max-width: 968px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .brand {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .waitlist-form {
+        margin: 0 auto 12px;
+    }
+
+    .hero-preview {
+        margin-top: 20px;
+    }
+}

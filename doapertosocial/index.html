@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoaPerto Social - Itatiba SP</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones via FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="hero-banner">
+        <div class="hero-container">
+            
+            <!-- Lado Esquerdo: Textos e Cadastro -->
+            <div class="hero-content">
+                <div class="brand">
+                    <i class="fa-solid fa-box-archive brand-icon"></i>
+                    <div>
+                        <span class="brand-name">DoaPerto Social</span>
+                        <span class="brand-sub">Itatiba - SP</span>
+                    </div>
+                </div>
+
+                <h1>Pode ajudar hoje?<br>Descubra quem precisa na sua região.</h1>
+                
+                <p>O <strong>DoaPerto Social</strong> conecta quem quer e tem condições de contribuir com pessoas e instituições de Itatiba. Prático, rápido e solidário.</p>
+                
+                <form action="salvar_email.php" method="POST" class="waitlist-form">
+                    <input type="email" name="email" placeholder="Digite seu melhor e-mail" required>
+                    <button type="submit">Quero ser avisado</button>
+                </form>
+                
+                <p class="form-subtext">Junte-se à nossa lista de espera em Itatiba. Não enviaremos spam!</p>
+                
+                <div class="badge-partnership">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Uma iniciativa comunitária para Itatiba e região</span>
+                </div>
+            </div>
+
+            <!-- Lado Direito: Preview Funcional (Celular) -->
+            <div class="hero-preview">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        
+                        <!-- Topo do App -->
+                        <div class="app-header">
+                            <span class="app-title"><i class="fa-solid fa-box-archive"></i> DoaPerto Social</span>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        
+                        <!-- Card de Doação Necessária (Sem Imagem Externa) -->
+                        <div class="app-card">
+                            <div class="card-image-fallback">
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                            </div>
+                            <div class="card-badge">PRECISA-SE</div>
+                            <div class="card-info">
+                                <h3>Lar de Idosos de Itatiba</h3>
+                                <p>Necessita de fraldas geriátricas e alimentos não perecíveis.</p>
+                            </div>
+                        </div>
+
+                        <!-- Mapa Simulado (Sem Imagem Externa) -->
+                        <div class="map-simulation">
+                            <span class="map-label">Itatiba - SP</span>
+                            
+                            <!-- Pinos de necessidades espalhados -->
+                            <div class="map-pin pin-1" title="Campanha de Alimentos"><i class="fa-solid fa-basket-shopping"></i></div>
+                            <div class="map-pin pin-2" title="Doação de Roupas"><i class="fa-solid fa-shirt"></i></div>
+                            <div class="map-pin pin-3" title="Abrigo Local"><i class="fa-solid fa-house-chimney-user"></i></div>
+                            <div class="map-pin pin-4" title="Lar de Idosos"><i class="fa-solid fa-heart"></i></div>
+                            
+                            <!-- O usuário "Você" no centro -->
+                            <div class="user-location-pin">
+                                <div class="pulse"></div>
+                                <i class="fa-solid fa-person"></i>
+                            </div>
+                        </div>
+
+                        <!-- Barra de Navegação Inferior -->
+                        <div class="app-nav">
+                            <i class="fa-solid fa-house active"></i>
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Elementos decorativos flutuando (Atrás do celular) -->
+                <div class="decor deco-1"><i class="fa-solid fa-heart"></i></div>
+                <div class="decor deco-2"><i class="fa-solid fa-handshake-angle"></i></div>
+                <div class="decor deco-3"><i class="fa-solid fa-gift"></i></div>
+            </div>
+
+        </div>
+    </header>
+
+</body>
+</html>
